@@ -1,0 +1,27 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: API du projet
+            description: Documentation de l'API (authentification JWT, inscription, etc.)
+            version: 1.0.0
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+                    description: "Token JWT obtenu via POST /api/login ou POST /api/register"
+        security:
+            - Bearer: []
+        paths:
+            /api/register:
+                post:
+                    security: []
+            /api/login:
+                post:
+                    security: []
+
+    areas:
+        default:
+            path_patterns:
+                - ^/api(?!/doc)
