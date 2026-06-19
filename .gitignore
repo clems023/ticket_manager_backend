@@ -9,6 +9,10 @@
 /vendor/
 ###< symfony/framework-bundle ###
 
+###> IDE ###
+/.idea/
+###< IDE ###
+
 ###> phpunit/phpunit ###
 /phpunit.xml
 /.phpunit.cache/
